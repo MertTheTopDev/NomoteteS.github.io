@@ -1,420 +1,1187 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mert Turedu iOS Developer</title>
 
-    gtag("config", "G-YMWDE0VTD3");
-  </script>
-  <meta name="google-site-verification" content="zMNl24ruDnyqiliYwKNU_r09OkPCDKz0kMBtF9nqiCc" />
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#000" />
-  <meta name="description"
-    content="Mert TÜredü | Portfolio Explore my journey as an iOS developer, where I deliver high-performance apps with Swift and SwiftUI, focusing on clean architecture and optimized solutions. With expertise in leading teams, app performance, and modern development patterns, I create engaging user experiences and scalable software." />
-  <meta name="keywords"
-    content="Mert Türedü, Mert Türedü portfolio, iOS developer Mert Türedü, Swift developer, Objective-C expert, Mert Türedü iOS development, mobile app development, clean code, app performance optimization, SwiftUI projects, iOS developer GitHub, iOS developer projects, Mert Türedü site, Mert Türedü blog, mobile app showcase." />
-  <meta name="author" content="Mert Türedü" />
-  <meta property="og:title" content="Mert Türedü | Portfolio" />
-  <meta property="og:description"
-    content="Hi! My name is Mert Türedü. I'm an iOS developer with a passion for building high-performance apps and clean architecture. Visit and explore my projects, where I focus on optimized solutions, seamless user experiences, and modern design patterns. I value efficient code, innovative app performance, and thoughtful interactions." />
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <meta property="og:url" content="https://mertturedu.engineer" />
-  <meta property="og:site_name" content="Mert Türedü Portfolio" />
-  <title>Mert Türedü | Senior iOS Developer Portfolio</title>
-  <link rel="shortcut icon" href="src/png/siteIcon.png" type="image/x-icon">
-    <!-- aos cdn -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- google fonts-->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!--
+    - email js 
+  -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "i7doaSL6Xzgqtr5kv",
+      });
+   })();
+</script>
+<script src="script.js"> </script>
 
-<body class="body">
-    <!-- mp3-->
-  <audio loop="" id="audioPlayer" style="display: none">
-    <source src="src/mp3/pianoMusic.mp3" type="audio/mp3" />
-  </audio>
-  <div id="preloader"></div>
-  <noscript>Allow Javascript</noscript>
+</head>
 
-  <header>
-    <div class="cursor-inner" id="cursor-inner"></div> 
-    <div class="cursor-outer" id="cursor-outer"></div>
+<body>
 
-    <div class="navbar" id="navbar">
-      <div class="hey">iOS</div>
-      <div class="logo" tabindex="0" aria-label="vinod jangid logo">
-        <div class="logo-top">
-          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
-        </div>
-      </div>
-      <div class="navbar-tabs" id="navbar-tabs">
-        <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
-            <a href="#home" tabindex="0" aria-label="Home menu button">
-              &#60;/Home&#62;
-            </a>
-          </li>
-
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
-            <a href="#about" aria-label="about menu button">
-              &#60;/AboutMe&#62;
-            </a>
-          </li>
-
-          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
-            <a href="#skills" aria-label="skills menu button">
-              &#60;/Skills&#62;
-            </a>
-          </li>
-
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-            <a href="#projects" aria-label="projects menu button">
-              &#60;/Projects&#62;
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- navbar tabs ends -->
-    </div>
-  </header>
-  <!-- header ends here -->
+  <!--
+    - #MAIN
+  -->
 
   <main>
-    <!-- hamburger -->
-    <div class="hamburger" id="hamburger" data-aos="fade">
-      <div class="hamburgerbase">
-        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
-          <span class="burger-bar" id="burger-bar1"></span>
-          <span class="burger-bar" id="burger-bar2"></span>
-          <span class="burger-bar" id="burger-bar3"></span>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Mert Turedu</h1>
+
+          <p class="title">Mobile & AI Product Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
         </button>
+
       </div>
-    </div>
-    <!-- hamburger -->
-    <div class="mobiletogglemenu" id="mobiletogglemenu">
-      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Home&#62;
-          </a>
-        </li>
 
-        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">
-            &#60;/AboutMe&#62;
-          </a>
-        </li>
-        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">
-            &#60;/Skills&#62;
-          </a>
-        </li>
-        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">
-            &#60;/Projects&#62;
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- mobile toggle menu ends -->
+      <div class="sidebar-info_more">
 
-    <section class="landing-page-container" id="home">
-      <div class="blob"></div>
+        <div class="separator"></div>
 
-      <div class="text-content">
-        <article id="hello-friend" data-aos="fade-down" data-aos-delay="0">
-          <p class="jello">s</p>
-          <p class="jello">t</p>
-          <p class="jello">a</p>
-          <p class="jello">r</p>
-          <p class="jello">t</p>
-          <p class="jello">(</p>
-          <p class="jello">)</p>
-          <p class="jello">;</p>
-          &nbsp;
-          <p class="jello">I</p>
-          <p class="jello">'</p>
-          <p class="jello">m</p>
-        </article>
-        <article id="name" data-aos="fade-uo" data-aos-delay="200">
-          <p class="jello">M</p>
-          <p class="jello">E</p>
-          <p class="jello">R</p>
-          <p class="jello">T</p>
-          &nbsp;
-          <p class="jello">T</p>
-          <p class="jello">U</p>
-          <p class="jello">R</p>
-          <p class="jello">E</p>
-          <p class="jello">D</p>
-          <p class="jello">U</p>
-          <p class="jello">.</p>
-        </article>
+        <ul class="contacts-list">
 
-        <article id="work" data-aos="fade-up" data-aos-delay="300">
-          <div>
-            <p class="jello">S</p>
-            <p class="jello">e</p>
-            <p class="jello">n</p>
-            <p class="jello">i</p>
-            <p class="jello">o</p>
-            <p class="jello">r</p>
-          </div>
-          <div>
-            <p class="jello">i</p>
-            <p class="jello">O</p>
-            <p class="jello">S</p>
-          </div>
-          <div>
-            <p class="jello">D</p>
-            <p class="jello">e</p>
-            <p class="jello">v</p>
-            <p class="jello">e</p>
-            <p class="jello">l</p>
-            <p class="jello">o</p>
-            <p class="jello">p</p>
-            <p class="jello">e</p>
-            <p class="jello">r</p>
-          </div>
-        </article>
-        <p id="info-para" data-aos="fade-up" data-aos-delay="500">
-          Building high-performance iOS apps that set new standards. Turning complex challenges into seamless, scalable solutions with a focus on innovation.
-          <br/>
-          <br/>
-          Experienced iOS developer with expertise in Swift, Objective-C, and architectural patterns like MVVM and VIPER. Skilled in optimizing app performance, leading teams, and integrating CI/CD pipelines for seamless development and delivery. Focused on delivering high-quality, scalable applications in fast-paced, Agile environments.        </p>
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="500">
-          <a href="mailto:nomotetes.onetrue@icloud.com" tabindex="-1">
-            <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Conversation!</p>
-              <span class="letsTalkBtn-BG"></span>
-            </button></a>
-          <div class="setting-container" id="setting-container">
-            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+          <li class="contact-item">
 
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
-              aria-label="settings for sound and appearance"></label>
-
-              <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
-                <input type="checkbox" id="switchforsound" onclick="playpause()" />
-                <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
-                  class="needtobeinvert"></label>
-              </div>
-
-            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
-              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
 
-            
-          </div>
-          <!-- setting div ends -->
-        </div>
-        <!-- contact-btn-div -->
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:nomotetes.onetrue@icloud.com" class="contact-link">nomotetes.onetrue@icloud.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+90 (539) 246 95 51</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Turkey</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/MertTheTopDev" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://medium.com/@azmanmerto" class="social-link">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
       </div>
-     
-    </section>
-    <!-- landing page ends here -->
-    <section class="about-section-container" id="about" data-aos="fade-up">
-      <div class="about-section">
-        <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/AboutMe&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-        <div class="info-dp-section">
-          <div class="about-info">
-            <p tabindex="0">
-              Imagine a future where technology seamlessly integrates into every aspect of life—that's the vision I, Mert Türedü, work to bring to reality. With over 6 years of experience in iOS development, I've delivered innovative, scalable solutions across fields like AI, crypto, and social media.              <p tabindex="0">
-                <br />
-                Skilled in Swift, SwiftUI, and a range of frameworks, I build high-performance applications that meet both user needs and business goals. Leading teams through complex challenges, I ensure clear execution and foster collaboration.            
-               </p>
-            <br />
-            <p tabindex="0">
-              Always adapting to new technologies, I’m driven by a commitment to clean architecture and agile practices, optimizing every project for long-term success.
-             <p tabindex="0">
-              <br/>
-              Fueled by innovation, I’m shaping the future of mobile technology with every project.
-            </p>
-             <!-- Resume button -->
-      <button class="resume-btn" id="resume-btn" onclick="openURL()">
-        <div class="sign">
-          <svg viewBox="0 0 640 512">
-            <path
-              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-          </svg>
-        </div>
 
-        <div class="text">Resume</div>
-      </button>
-          </div>
+    </aside>
 
-          <div class="dp" data-aos="fade-up">
-            <img src="src/png/mertImage.png" alt="Mert Türedü" tabindex="0" aria-label="image of Mert" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about section ends  -->
 
-    <section class="skills-section-container" id="skills">
-      <div class="skills-section">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Skills&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-        <div class="frontend-dev-section">
-          <ul class="tech-stack-wrapper">
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/xcodeIcon.png" alt="Xcode skill" class="tech-stack-logo" />
-              <span class="tooltip">XCode</span>
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <!--- 
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          -->
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+<section class="about-text">
+  <p>
+    I’m a <strong>Senior iOS Developer with 8+ years of experience</strong> building 
+    <strong>reliable, high-performance, and user-focused mobile applications</strong>. 
+    I specialize in <strong>modern iOS architectures</strong>, 
+    <strong>performance-driven engineering</strong>, and 
+    <strong>delivering App Store products end-to-end</strong> — from concept and design 
+    to development, release, and continuous iteration.
+  </p>
+
+  <p>
+    Throughout my career, I’ve worked on 
+    <strong>AI-powered solutions</strong>, 
+    <strong>real-time video processing</strong>, 
+    <strong>scanning and automation tools</strong>, 
+    <strong>subscription-based platforms</strong>, and 
+    <strong>lifestyle applications</strong>, gaining hands-on experience in turning ideas 
+    into <strong>scalable digital products</strong>. I focus on enhancing the user experience 
+    through <strong>clean architecture</strong>, 
+    <strong>efficient async pipelines</strong>, 
+    <strong>data-informed decisions</strong>, 
+    and seamless collaboration across product, design, and engineering teams.
+  </p>
+
+  <p>
+    If you’re looking to <strong>build, modernize, or scale your iOS product</strong>, 
+    or explore <strong>AI-powered features</strong>, I’d love to connect.
+  </p>
+</section>
+
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
             </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/swiftUI.png" alt="SwiftUI Tech" class="tech-stack-logo" />
-              <span class="tooltip">Swift & SwiftUI</span>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
             </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/testflyIcon.png" alt="TestFlight skill" class="tech-stack-logo" />
-              <span class="tooltip">TestFlight</span>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
             </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/githublogo.png" alt="Github skill" class="tech-stack-logo" />
-              <span class="tooltip">Github</span>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
             </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/gitlogo.png" alt="Github skill" class="tech-stack-logo" />
-              <span class="tooltip">Git</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/firebase.png" alt="Firebase skill" class="tech-stack-logo" />
-              <span class="tooltip">Firebase</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/sqlLogo.png" alt="SQL skill" class="tech-stack-logo" />
-              <span class="tooltip">SQL</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/ciCdLogo.png" alt="CI & CD skill" class="tech-stack-logo" />
-              <span class="tooltip">CI & CD</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/webDevLogo.png" alt="Web Developer skill" class="tech-stack-logo" />
-              <span class="tooltip">Web Developer</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/androidLogo.png" alt="Web Developer skill" class="tech-stack-logo" />
-              <span class="tooltip">Android Undestand</span>
-            </li>
+
           </ul>
-        </div>
-      </div>
-    </section>
-    <!-- skills section ends -->
-    <section class="projects-section-container" id="projects">
-      <div class="projects-section-div">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-            &#60;/Projects&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-        <div class="logos" style="margin-top: 80px; margin-bottom: 150px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 50px;">
-          <!-- First App Section -->
-          <div style="display: flex; flex: 1; min-width: 300px; max-width: 100%;">
-            <div class="dp" data-aos="fade-up" style="flex: 1; min-width: 220px;">
-              <img src="assets/img/portfolio/app/balloon.png" alt="Balloon - DNS" tabindex="0" aria-label="Balloon DNS app image" />
-            </div>
-            
-            <div style="display: flex; flex-direction: column; flex: 1;">
-              <h3 style="color: white; font-size: 24px; margin-bottom: 20px; font-weight: bold; text-align: center;">Balloon - DNS</h3>
-              <div class="buttons-container" style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
-                <a href="#" class="info-button" style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; text-decoration: none; color: white; background-color: #141414; padding: 12px 18px; border-radius: 12px; width: 260px;">
-                  <svg class="SocialHandle" viewBox="0 0 384 512" width="24" height="24" fill="#cf59e6" style="flex-shrink: 0;">
-                    <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
-                  </svg>
-                  <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">App Store</span>
-                </a>
-                
-                <a href="/balloon/terms_of_use.html" class="info-button" style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; text-decoration: none; color: white; background-color: #141414; padding: 12px 18px; border-radius: 12px; width: 260px;">
-                  <svg class="SocialHandle" viewBox="0 0 576 512" width="24" height="24" fill="#cf59e6" style="flex-shrink: 0;">
-                    <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM176 240h32c30.9 0 56 25.1 56 56s-25.1 56-56 56H192v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368 304 256c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H192v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H304c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16V304c0-8.8-7.2-16-16-16H320v80h16z"/>
-                  </svg>
-                  <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Terms of Use</span>
-                </a>
-                
-                <a href="/balloon/privacy_policy.html" class="info-button" style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; text-decoration: none; color: white; background-color: #141414; padding: 12px 18px; border-radius: 12px; width: 260px;">
-                  <svg class="SocialHandle" viewBox="0 0 640 512" width="24" height="24" fill="#cf59e6" style="flex-shrink: 0;">
-                    <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
-                  </svg>
-                  <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Privacy Policy</span>
-                </a>
 
-                <a href="/balloon/eula.html" class="info-button" style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; text-decoration: none; color: white; background-color: #141414; padding: 12px 18px; border-radius: 12px; width: 260px;">
-                  <svg class="SocialHandle" viewBox="0 0 384 512" width="24" height="24" fill="#cf59e6" style="flex-shrink: 0;">
-                    <path d="M224 136V0H24C10.8 0 0 10.8 0 24V488c0 13.2 10.8 24 24 24H360c13.2 0 24-10.8 24-24V160H248c-13.2 0-24-10.8-24-24zM384 121.9V128H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 17z"/>
-                  </svg>
-                  <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">EULA</span>
-                </a>
-                
-              </div>
-            </div>
-          </div>
-          
-          <!-- Second App Section -->
-          <div style="display: flex; flex: 1; min-width: 300px; max-width: 100%;">
-            <div class="dp" data-aos="fade-up" style="flex: 1; min-width: 220px;">
-              <img src="assets/img/portfolio/app/iSalah.png" alt="iSalah App" tabindex="0" aria-label="AISalah app image" />
-            </div>
-            
-            <div style="display: flex; flex-direction: column; flex: 1;">
-              <h3 style="color: white; font-size: 24px; margin-bottom: 20px; font-weight: bold; text-align: center;">AISalah</h3>
-              <div class="buttons-container" style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
-                <a href="https://apps.apple.com/tr/app/aisalah/id6742526415" class="info-button" style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; text-decoration: none; color: white; background-color: #141414; padding: 12px 18px; border-radius: 12px; width: 260px;">
-                  <svg class="SocialHandle" viewBox="0 0 384 512" width="24" height="24" fill="#cf59e6" style="flex-shrink: 0;">
-                    <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
-                  </svg>
-                  <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">App Store</span>
-                </a>
-                
-                <a href="/AiSalah/terms-of-use.html" class="info-button" style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; text-decoration: none; color: white; background-color: #141414; padding: 12px 18px; border-radius: 12px; width: 260px;">
-                  <svg class="SocialHandle" viewBox="0 0 576 512" width="24" height="24" fill="#cf59e6" style="flex-shrink: 0;">
-                    <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM176 240h32c30.9 0 56 25.1 56 56s-25.1 56-56 56H192v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368 304 256c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H192v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H304c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16V304c0-8.8-7.2-16-16-16H320v80h16z"/>
-                  </svg>
-                  <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Terms of Use</span>
-                </a>
-                
-                <a href="/AiSalah/privacy-policy.html" class="info-button" style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; text-decoration: none; color: white; background-color: #141414; padding: 12px 18px; border-radius: 12px; width: 260px;">
-                  <svg class="SocialHandle" viewBox="0 0 640 512" width="24" height="24" fill="#cf59e6" style="flex-shrink: 0;">
-                    <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
-                  </svg>
-                  <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Privacy Policy</span>
-                </a>
+        </section>
 
-                <a href="/AiSalah/eula.html" class="info-button" style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; text-decoration: none; color: white; background-color: #141414; padding: 12px 18px; border-radius: 12px; width: 260px;">
-                  <svg class="SocialHandle" viewBox="0 0 384 512" width="24" height="24" fill="#cf59e6" style="flex-shrink: 0;">
-                    <path d="M224 136V0H24C10.8 0 0 10.8 0 24V488c0 13.2 10.8 24 24 24H360c13.2 0 24-10.8 24-24V160H248c-13.2 0-24-10.8-24-24zM384 121.9V128H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 17z"/>
-                  </svg>
-                  <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">EULA</span>
-                </a>
+
+        <!--
+          - testimonials
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
               </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-          </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-      </div>
-    </section>
-    
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="school-outline"></ion-icon>
+    </div>
+
+    <h3 class="h3">Education</h3>
+  </div>
+
+  <ol class="timeline-list">
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Near East University — Computer Engineering</h4>
+      <span>2018 — 2022 · English Education</span>
+      <p class="timeline-text">
+        Studied Computer Engineering with a focus on software development, algorithms, and modern programming concepts within an English-based curriculum.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Sevkiye Özel Fen Lisesi (Science High School)</h4>
+      <span>2014 — 2018</span>
+      <p class="timeline-text">
+        Completed high school education with a science-focused curriculum, strengthening analytical thinking and problem-solving fundamentals.
+      </p>
+    </li>
+
+  </ol>
+
+</section>
+
+
+       <section class="timeline">
+
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="briefcase-outline"></ion-icon>
+    </div>
+
+    <h3 class="h3">Experience</h3>
+  </div>
+
+  <ol class="timeline-list">
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Senior iOS Developer — IzySoft</h4>
+      <span>Jan 2025 — Present · Full-Time · Remote</span>
+      <p class="timeline-text">
+        Architecting async pipelines and scalable architectures for real-time PDF
+        scanning and automation, improving performance and stability for XScanner
+        and document-focused iOS products.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Senior iOS Developer — Going Merry</h4>
+      <span>Oct 2024 — Dec 2024 · Contract · Remote</span>
+      <p class="timeline-text">
+        Built advanced real-time video effects with Core Image and Metal for RadCam,
+        and refactored legacy SwiftUI modules into reusable, maintainable components.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Lead Senior iOS Developer — Boby.ai</h4>
+      <span>Mar 2024 — Oct 2024 · Full-Time · Remote</span>
+      <p class="timeline-text">
+        Led a small iOS team across multiple AI-powered mobile products, including
+        Mozart AI. Improved onboarding, engagement, and subscriptions using analytics,
+        A/B testing, and remote configuration.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Lead Senior iOS Developer — Moseiki</h4>
+      <span>Feb 2023 — Jan 2024 · Full-Time · Remote</span>
+      <p class="timeline-text">
+        Designed backend-driven logic for 450+ screens and NFT-based crypto features,
+        and integrated gRPC to improve data flow and performance in a large-scale
+        social media platform.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Mid iOS Developer — Crypto Pro</h4>
+      <span>Apr 2021 — Aug 2022 · Full-Time · Remote</span>
+      <p class="timeline-text">
+        Delivered secure crypto trading and portfolio features with optimized API
+        communication, and added watchOS real-time market updates with more reliable
+        alerts and interactions.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Mid iOS Developer — GreenTomato Media</h4>
+      <span>May 2020 — Mar 2021 · Full-Time · Remote</span>
+      <p class="timeline-text">
+        Implemented subscription flows and modular MVVM components for mobile products,
+        improving purchase handling, conversion rates, and development speed for apps
+        like Truth or Dare Dirty Party.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Junior iOS Developer — Ratel</h4>
+      <span>Feb 2018 — May 2020 · Full-Time · On-Site (Denizli)</span>
+      <p class="timeline-text">
+        Developed modern UI elements and improved REST and SQL-based data handling for
+        TRT Çocuk and other mobile projects, contributing to more consistent overall
+        app performance.
+      </p>
+    </li>
+
+  </ol>
+
+</section>
+
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">iOS Developer</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Android Developer</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Flutter Developer</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+       <li class="blog-post-item">
+              <a href="https://medium.com/@mertthedev/the-future-of-swift-in-2025-trends-technologies-and-relevance-in-the-industry-9e22b0709c61" 
+                target="_blank" 
+                  rel="noopener noreferrer">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="The Future of Swift in 2025: Trends, Technologies, and Relevance in the Industry" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Swift</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Oct 23, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The Future of Swift in 2025: Trends, Technologies, and Relevance in the Industry</h3>
+
+                  <p class="blog-text">
+                    What is Swift?
+Swift is a powerful, open-source programming language developed by Apple, primarily used for building apps on iOS, macOS, watchOS, and tvOS. It combines safety, speed, and modern syntax to make it more developer-friendly compared to older languages like Objective-C
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@mertthedev/protocols-enums-classes-actors-structs-extensions-and-generics-in-swift-mastering-the-1ae00bbee46c" 
+                target="_blank" 
+                  rel="noopener noreferrer">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Protocols, Enums, Classes, Actors, Structs, Extensions, and Generics in Swift: Mastering the Essentials of Swift Programming" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Swift</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Oct 23, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Protocols, Enums, Classes, Actors, Structs, Extensions, and Generics in Swift: Mastering the Essentials of Swift Programming</h3>
+
+                  <p class="blog-text">
+                    Swift is a powerful and versatile programming language that offers various features for building robust applications.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+         <li class="blog-post-item">
+              <a href="https://azmanmerto.medium.com/mastering-swift-function-attributes-nonisolated-mutating-and-beyond-5ac80a061c47" 
+                target="_blank" 
+                  rel="noopener noreferrer">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Mastering Swift Function Attributes: nonisolated, mutating, and Beyond" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Swift</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Oct 23, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Mastering Swift Function Attributes: nonisolated, mutating, and Beyond</h3>
+
+                  <p class="blog-text">
+                    In Swift, function attributes are key to controlling how functions handle state, concurrency, and errors.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@mertthedev/ios-developer-teknik-mülakat-soruları-24-adet-820e1ce0fcf5" 
+                target="_blank" 
+                  rel="noopener noreferrer">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="iOS Developer teknik mülakat soruları (24 adet)" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Insights</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Dec 25, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">iOS Developer teknik mülakat soruları (24 adet)</h3>
+
+                  <p class="blog-text">
+                    Soru 1: UIKit’te kullanılan UIView ve UIViewController arasındaki temel farklar nelerdir ve bu iki sınıf arasındaki ilişkiyi nasıl tanımlarsınız?
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+                  <li class="blog-post-item">
+              <a href="https://medium.com/@mertthedev/learning-swift-in-2024-should-you-do-it-e4dd5308d56d" 
+                target="_blank" 
+                  rel="noopener noreferrer">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="Learning Swift in 2024: Should You Do It?" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Swift</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Oct 17, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Learning Swift in 2024: Should You Do It?</h3>
+
+                  <p class="blog-text">
+                   What is Swift?
+Swift is a programming language designed by Apple Inc. for developing applications for iOS, macOS, watchOS, and tvOS. As a high-performance and modern language, Swift aims to facilitate secure and rapid software
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+                  <li class="blog-post-item">
+              <a href="https://medium.com/@mertthedev/ios-developer-teknik-mülakat-soruları-24-adet-820e1ce0fcf5" 
+                target="_blank" 
+                  rel="noopener noreferrer">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Bu Misafir Girişi NEDİR ?" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Questions</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Oct 13, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Bu Misafir Girişi NEDİR ?</h3>
+
+                  <p class="blog-text">
+                    Misafir girişi, kullanıcılara bir uygulamayı ya da web sitesini, herhangi bir hesap oluşturma veya oturum açma işlemi yapmadan geçici olarak erişim sağlama özelliğidir. Bu özellik, kullanıcıların servisi denemelerine ve içeriği gözden geçirmelerine olanak tanır, eğer beğenirlerse daha sonra kaydolabilirler.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403032.46399548836!2d29.095395!3d37.8909055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c7139e13246151%3A0xccf557bc03a2758d!2sDenizli%20Merkez%2C%20Denizli!5e0!3m2!1str!2str!4v1764915327491!5m2!1str!2str"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input id="fullname" type="text" name="fullname"  class="form-input" placeholder="Full name" required data-form-input>
+
+              <input id="email" type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" onclick="sendMail(event)" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
   </main>
 
 
@@ -422,117 +1189,17 @@
 
 
 
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
-
-
-
-
-  
-  <!-- main ends here -->
-
-  <footer id="footer">
-    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
-      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
-    </button>
-    <div class="footer-background">
-      <div class="footer-blob"></div>
-    </div>
-    <div class="footer-foreground">
-      <div class="footercontainer">
-        <div class="two-words">
-          <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
-            "Learning, Living, and Leveling Up."
-          </article>
-        </div>
-        <div class="social-media-container">
-          <div class="getintouch-heading">
-            <article>GetinTouch();</article>
-          </div>
-          <div class="logos">
-            <a href="https://www.linkedin.com/in/mertüredü/" target="_blank"
-              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
-                <path
-                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-              </svg></a>
-
-            <a href="https://github.com/AzmanMerto" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
-                class="SocialHandle">
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-              </svg></a>
-
-            <a href="mailto:nomotetes.onetrue@icloud.com" target="_blank" aria-label="My Gmail"><svg class="SocialHandle" id="GmailLogo"
-                viewBox="0 0 512 512">
-                <path
-                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-              </svg></a>
-          </div>
-        </div>
-        
-        <div class="footer-bottom">
-          <article>
-            Design & Built by Mert Türedü
-            &#169; 2024
-          </article>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- footer ends here -->
-
-  <script src="main.js"></script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <script>
-    function openURL() {
-      var url = "src/pdf/MertTureduCV.pdf";
-
-      window.open(url, "_blank");
-    }
-  </script>
-
-  <script>
-    const cursorInner = document.getElementById("cursor-inner");
-    const cursorOuter = document.getElementById("cursor-outer");
-    const links = document.querySelectorAll("a,label,button");
-
-    document.addEventListener("mousemove", function (e) {
-      const posX = e.clientX;
-      const posY = e.clientY;
-
-      cursorInner.style.left = `${posX}px`;
-      cursorInner.style.top = `${posY}px`;
-
-      // cursorOuter.style.left = `${posX}px`;
-      // cursorOuter.style.top = `${posY}px`;
-
-      cursorOuter.animate(
-        {
-          left: `${posX}px`,
-          top: `${posY}px`,
-        },
-        { duration: 500, fill: "forwards" }
-      );
-
-      links.forEach((link) => {
-        link.addEventListener("mouseenter", () => {
-          cursorInner.classList.add("hover");
-          cursorOuter.classList.add("hover");
-        });
-        link.addEventListener("mouseleave", () => {
-          cursorInner.classList.remove("hover");
-          cursorOuter.classList.remove("hover");
-        });
-      });
-    });
-  </script>
- <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 </body>
 
 </html>
