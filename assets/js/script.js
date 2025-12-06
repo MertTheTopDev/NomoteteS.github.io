@@ -77,6 +77,33 @@ for (let i = 0; i < selectItems.length; i++) {
 
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
+const filterButtons = document.querySelectorAll("[data-filter-btn]");
+const projectItems = document.querySelectorAll("[data-filter-item]");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const selectedFilter = button.textContent.trim().toLowerCase().replace(/\s+/g, "-");
+
+    projectItems.forEach(item => {
+      const categories = item.dataset.category
+        .toLowerCase()
+        .split(",")
+        .map(c => c.trim());
+
+      if (selectedFilter === "all" || categories.includes(selectedFilter)) {
+        item.classList.add("active");
+        item.style.display = "block";
+      } else {
+        item.classList.remove("active");
+        item.style.display = "none";
+      }
+    });
+
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+  });
+});
+
 
 const filterFunc = function (selectedValue) {
 
@@ -84,7 +111,7 @@ const filterFunc = function (selectedValue) {
 
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+} else if (filterItems[i].dataset.category.toLowerCase().split("|").includes(selectedValue)) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
