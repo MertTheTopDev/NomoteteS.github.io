@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { GraduationCap, Briefcase, Award, Languages } from 'lucide-react';
+import { GraduationCap, Briefcase, Award } from 'lucide-react';
 import { education, experience, skills, certifications, languages } from '@/data/content';
 
 const container = {
