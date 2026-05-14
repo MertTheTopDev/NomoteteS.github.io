@@ -1,11 +1,11 @@
 export const personalInfo = {
   name: 'Mert Türedü',
-  title: 'Mobile & AI Product Developer',
+  title: 'Senior iOS Engineer',
   email: 'mertturedu.thedev@gmail.com',
   phone: '+90 (539) 246 95 51',
   birthday: 'November 21, 1999',
   location: 'Istanbul, Turkey',
-  appsPublished: 52,
+  appsPublished: 35,
   avatar: '/assets/images/my-avatar.png',
   cvUrl: '/MertTureduCV.pdf',
   social: {
@@ -17,37 +17,37 @@ export const personalInfo = {
 
 export const stats = [
   { label: 'Years Experience', value: '8+' },
-  { label: 'Apps Published', value: '52+' },
-  { label: 'Users Reached', value: '2M+' },
-  { label: 'Clients Served', value: '7+' },
+  { label: 'Apps Shipped', value: '35+' },
+  { label: 'Users Reached', value: '8M+' },
+  { label: 'Engineers Led', value: '7' },
 ];
 
 export const aboutText = [
-  "I'm a <strong>Senior iOS Developer with 8+ years of experience</strong> building <strong>reliable, high-performance, and user-focused mobile applications</strong>. I specialize in <strong>modern iOS architectures</strong>, <strong>performance-driven engineering</strong>, and <strong>delivering App Store products end-to-end</strong> — from concept and design to development, release, and continuous iteration.",
-  "Throughout my career, I've worked on <strong>AI-powered solutions</strong>, <strong>real-time video processing</strong>, <strong>scanning and automation tools</strong>, <strong>subscription-based platforms</strong>, and <strong>lifestyle applications</strong>, gaining hands-on experience in turning ideas into <strong>scalable digital products</strong>.",
-  "If you're looking to <strong>build, modernize, or scale your iOS product</strong>, or explore <strong>AI-powered features</strong>, I'd love to connect.",
+  "I'm a <strong>Senior iOS Engineer with 8+ years of experience</strong> building and scaling <strong>AI-powered mobile applications</strong>, <strong>real-time rendering pipelines</strong>, and <strong>monetization systems</strong>. I've led a cross-functional team of <strong>7 engineers</strong>, delivered apps to <strong>8M+ users</strong>, reduced crash rates by up to <strong>38%</strong>, and shipped <strong>35+ production apps</strong> as primary or solo iOS engineer.",
+  "Throughout my career I've worked on <strong>AI-powered solutions</strong>, <strong>real-time video processing</strong>, <strong>scanning and automation tools</strong>, <strong>subscription-based platforms</strong>, and <strong>crypto & social platforms</strong> — gaining deep hands-on experience in turning ambitious ideas into <strong>scalable, high-performance digital products</strong>.",
+  "If you're looking to <strong>build, modernize, or scale an iOS product</strong>, or want to add <strong>AI-powered features</strong> to your mobile app, I'd love to connect.",
 ];
 
 export const services = [
   {
     icon: 'smartphone',
-    title: 'iOS Development',
-    description: 'End-to-end App Store products with Swift, SwiftUI, and UIKit — from architecture to release.',
+    title: 'iOS Engineering',
+    description: 'End-to-end App Store products with Swift, SwiftUI, and UIKit — from architecture design to production release.',
   },
   {
     icon: 'cpu',
     title: 'On-Device AI',
-    description: 'Core ML, Vision Framework, and OpenAI API integrations for intelligent, real-time mobile features.',
+    description: 'Core ML, Vision Framework, Metal compute shaders, and OpenAI API integrations for real-time intelligent features.',
   },
   {
     icon: 'layers',
     title: 'Cross-Platform',
-    description: 'Flutter and React Native solutions for teams that need iOS and Android from a single codebase.',
+    description: 'Flutter and React Native solutions for teams that need iOS and Android from a single, maintainable codebase.',
   },
   {
     icon: 'trending-up',
     title: 'Monetization & Growth',
-    description: 'RevenueCat, StoreKit 2, A/B testing, and analytics pipelines to scale app revenue.',
+    description: 'RevenueCat, StoreKit 2, A/B testing, and unified analytics pipelines that turn installs into sustainable revenue.',
   },
 ];
 
@@ -55,12 +55,21 @@ export const techStack = [
   {
     category: 'Languages',
     color: 'blue',
-    items: ['Swift', 'Objective-C', 'TypeScript', 'JavaScript', 'Python', 'Dart'],
+    items: ['Swift', 'Objective-C', 'TypeScript', 'JavaScript (ES6+)', 'Python', 'Dart'],
   },
   {
     category: 'iOS Frameworks',
     color: 'purple',
-    items: ['SwiftUI', 'UIKit', 'AVFoundation', 'Core ML', 'ARKit', 'Metal', 'Vision', 'Core Data', 'StoreKit 2', 'Combine', 'WidgetKit'],
+    items: [
+      'SwiftUI', 'UIKit', 'AVFoundation', 'Core ML', 'ARKit', 'Metal', 'Vision',
+      'Core Data', 'SwiftData', 'StoreKit 2', 'SceneKit', 'WidgetKit',
+      'App Intents', 'Live Activities', 'APNs', 'Accessibility',
+    ],
+  },
+  {
+    category: 'Concurrency & Reactive',
+    color: 'cyan',
+    items: ['async/await', 'Actors', 'Combine', 'RxSwift', 'GCD', 'OperationQueue'],
   },
   {
     category: 'Cross-Platform',
@@ -70,26 +79,38 @@ export const techStack = [
   {
     category: 'Tools & CI/CD',
     color: 'amber',
-    items: ['Xcode', 'Fastlane', 'GitHub Actions', 'Jenkins', 'Instruments', 'SPM', 'TestFlight'],
+    items: ['Xcode', 'Fastlane', 'GitHub Actions', 'Jenkins', 'Instruments', 'SPM', 'CocoaPods', 'SwiftLint', 'TestFlight', 'TDD'],
+  },
+  {
+    category: 'Security',
+    color: 'rose',
+    items: ['OAuth 2.0 / OIDC', 'JWT', 'TLS', 'Certificate Pinning', 'Keychain', 'App Transport Security'],
   },
   {
     category: 'SDKs & Services',
-    color: 'rose',
-    items: ['RevenueCat', 'Firebase', 'AppsFlyer', 'Mixpanel', 'OneSignal', 'Crashlytics', 'Stripe'],
+    color: 'violet',
+    items: ['RevenueCat', 'Adapty', 'Firebase', 'AppsFlyer', 'Mixpanel', 'OneSignal', 'Crashlytics', 'Stripe', 'Google Mobile Ads', 'ATT'],
   },
   {
     category: 'Architecture',
-    color: 'cyan',
-    items: ['MVVM', 'VIPER', 'Clean Architecture', 'async/await', 'TDD', 'SOLID', 'gRPC'],
+    color: 'sky',
+    items: ['MVVM', 'VIPER', 'Clean Architecture', 'Protocol-Oriented', 'Dependency Injection', 'SOLID', 'gRPC', 'REST', 'WebSocket'],
   },
+];
+
+export const languages = [
+  { name: 'Turkish', level: 'Native', width: 100, color: 'blue' },
+  { name: 'English', level: 'C1 · Advanced', width: 85, color: 'purple' },
+  { name: 'German', level: 'Elementary', width: 30, color: 'emerald' },
+  { name: 'Arabic', level: 'Beginner', width: 15, color: 'amber' },
 ];
 
 export const education = [
   {
     school: 'Near East University',
     degree: 'B.Sc. Computer Engineering',
-    period: '2014 — 2017',
-    detail: 'Nicosia, Cyprus · GPA: 3.66 / 4.00 · Full English curriculum',
+    period: '2014 — 2018',
+    detail: 'Nicosia, Cyprus · GPA: 3.66 / 4.00 · Full English curriculum · C1 Proficiency',
   },
   {
     school: 'Sevkiye Özel Fen Lisesi',
@@ -106,7 +127,7 @@ export const experience = [
     period: 'Jan 2025 — Present',
     type: 'Full-Time · Remote',
     description:
-      'Architected and shipped 6 production iOS apps (XScanner, CVMaker) with SwiftUI, MVVM, ARKit, Vision, and Metal. Cut time-to-market by 30% via Fastlane/GitHub Actions CI/CD while sustaining 99.5%+ crash-free sessions.',
+      'Architected and shipped 6 production iOS apps (XScanner, CVMaker) with SwiftUI, MVVM, ARKit, Vision, and Metal. Cut time-to-market by 30% via Fastlane/GitHub Actions CI/CD pipelines while sustaining 99.5%+ crash-free sessions through Crashlytics-driven QA. Shipped end-to-end monetization stack with RevenueCat, StoreKit 2, Firebase, and AppsFlyer.',
   },
   {
     company: 'Going Merry',
@@ -114,7 +135,7 @@ export const experience = [
     period: 'Oct 2024 — Dec 2024',
     type: 'Contract · Remote',
     description:
-      'Stabilized RadCam (2M+ users) by refactoring its real-time camera pipeline in Core Image and Metal, migrating legacy UIKit to SwiftUI — cutting render-pipeline crashes by 30%.',
+      'Reduced p95 frame latency from 48ms → 19ms on iPhone 12 by porting CoreImage filter chain to custom Metal compute shaders, eliminating 3 redundant texture copies — enabling 60 FPS sustained throughput on RadCam\'s 4M MAU base while cutting thermal throttling incidents 42%. Cut render-pipeline crash rate 30% by introducing GPU resource lifecycle ownership around AVCaptureVideoDataOutput, resolving 2 race conditions in MTLCommandBuffer reuse.',
   },
   {
     company: 'Boby.ai',
@@ -122,23 +143,15 @@ export const experience = [
     period: 'Mar 2024 — Oct 2024',
     type: 'Full-Time · Remote',
     description:
-      'Led a cross-functional team of 4 engineers across 3 AI-powered apps (iOS + Flutter). Automated Fastlane and Jenkins pipelines, cutting production crash rate by 38% and sustaining 98% crash-free sessions.',
+      'Led a cross-functional team of 4 engineers across 3 AI-powered mobile apps (iOS + Flutter); established PR gate standards, ran weekly architecture reviews, and onboarded 2 engineers to native iOS workflows, sustaining 98% crash-free sessions. Engineered a Core Data persistence layer validated across 6+ iPhone models and automated Fastlane/Jenkins pipelines, cutting production crash rate by 38%.',
   },
   {
     company: 'Moseiki',
-    role: 'Lead iOS Developer',
+    role: 'Senior iOS Developer',
     period: 'Feb 2023 — Jan 2024',
     type: 'Full-Time · Remote',
     description:
-      'Architected the gRPC API layer and AVFoundation media pipelines for a crypto-wallet social platform with 360+ dynamic screens at sub-200ms latency. Drove automated test coverage to 85%.',
-  },
-  {
-    company: 'Freelance',
-    role: 'Software Developer',
-    period: 'Aug 2022 — Present',
-    type: 'Side Projects & Consulting',
-    description:
-      'Delivered consulting and contract work for 7+ clients across fintech, AI, and consumer apps — architecture design, performance optimization, and monetization systems.',
+      'Architected the gRPC API layer (chosen over REST for bidirectional streaming) and AVFoundation media pipelines (AVAssetReader/Writer for memory-bounded processing) for an AI-powered social platform with NFT/crypto features — delivering 360+ dynamic screens at sub-200ms latency. Drove automated test coverage to 85% (XCTest, XCUITest, snapshot testing) across a VIPER codebase; mentored 2 mid-level engineers.',
   },
   {
     company: 'Crypto Pro',
@@ -146,7 +159,7 @@ export const experience = [
     period: 'Apr 2021 — Aug 2022',
     type: 'Full-Time · Remote',
     description:
-      'Delivered real-time trading flows with WebSocket and Combine for 10K+ daily active traders, cutting UI drop-off by 25%. Built watchOS background-sync pipelines with sub-200ms latency.',
+      'Delivered real-time trading flows with WebSocket and Combine for 10K+ daily active traders, cutting UI drop-off 25% through stream backpressure handling. Built watchOS background-sync pipelines using GCD and BackgroundTasks, boosting sync reliability 40% with sub-200ms latency.',
   },
   {
     company: 'GreenTomato Media',
@@ -154,7 +167,7 @@ export const experience = [
     period: 'May 2020 — Mar 2021',
     type: 'Full-Time · Remote',
     description:
-      'Built and optimized the IAP funnel for Truth or Dare Dirty (React Native + Redux), lifting paywall conversion by 22% via A/B-tested onboarding variants.',
+      'Built and optimized the IAP funnel for Truth or Dare Dirty (React Native, Redux), lifting paywall conversion 22% via A/B-tested onboarding variants and unifying iOS + Android revenue reporting with MongoDB-backed funnel analytics.',
   },
   {
     company: 'Ratel',
@@ -162,14 +175,14 @@ export const experience = [
     period: 'Feb 2018 — Mar 2020',
     type: 'Full-Time · On-Site (Denizli)',
     description:
-      'Built MVVM-based UI components in Objective-C and integrated REST APIs with SQL data layers for a corporate fintech client, reducing reported crashes by 25%.',
+      'Built MVVM-based UI components in Objective-C and integrated REST APIs with SQL data layers for a corporate fintech client, reducing reported crashes 25% over a 2-year on-site engagement.',
   },
 ];
 
 export const skills = [
   { name: 'iOS Development (Swift / SwiftUI)', level: 100 },
   { name: 'CI/CD (Fastlane, GitHub Actions)', level: 90 },
-  { name: 'On-Device AI / Core ML', level: 85 },
+  { name: 'On-Device AI / Core ML / Metal', level: 88 },
   { name: 'Flutter / React Native', level: 70 },
   { name: 'Android Development', level: 60 },
 ];
@@ -207,8 +220,8 @@ export const projects: Project[] = [
     details: {
       description:
         'Professional PDF scanner and document management app with real-time OCR, intelligent edge detection, and cloud sync. One of 6 production apps shipped at IzySoft with a focus on performance and stability.',
-      techStack: ['Swift', 'SwiftUI', 'Vision Framework', 'Core Data', 'Metal', 'RevenueCat', 'Firebase'],
-      highlights: ['99.5%+ crash-free sessions', 'Real-time edge detection via Vision', 'RevenueCat subscription stack', '30% faster CI/CD pipeline'],
+      techStack: ['Swift', 'SwiftUI', 'Vision Framework', 'Core Data', 'Metal', 'RevenueCat', 'Firebase', 'Fastlane'],
+      highlights: ['99.5%+ crash-free sessions', 'Real-time edge detection via Vision Framework', 'Full RevenueCat monetization stack', '30% faster time-to-market via CI/CD'],
       appStoreLink: 'https://apps.apple.com/tr/app/xscanner-pdf-dosya-taray%C4%B1c%C4%B1/id1553261625',
     },
   },
@@ -221,9 +234,9 @@ export const projects: Project[] = [
     link: 'https://apps.apple.com/tr/app/radcam-creative-photo-filters/id1079944301',
     details: {
       description:
-        'Real-time creative camera app with advanced photo filters for 2M+ users. Refactored its camera pipeline in Core Image and Metal, and migrated legacy UIKit modules to modern SwiftUI.',
-      techStack: ['Swift', 'SwiftUI', 'UIKit', 'Core Image', 'Metal', 'AVFoundation', 'Fastlane'],
-      highlights: ['2M+ active users', '30% reduction in render-pipeline crashes', 'Legacy UIKit → SwiftUI migration', 'Unified SDK via SPM'],
+        'Real-time creative camera app serving 4M MAU. Ported CoreImage filter chain to custom Metal compute shaders, reducing p95 frame latency from 48ms → 19ms and enabling sustained 60 FPS while cutting thermal throttling incidents by 42%.',
+      techStack: ['Swift', 'SwiftUI', 'UIKit', 'Metal', 'Core Image', 'AVFoundation', 'SPM', 'Fastlane'],
+      highlights: ['4M Monthly Active Users', 'p95 latency: 48ms → 19ms via Metal shaders', '42% reduction in thermal throttling', '30% crash rate reduction over 3-month rollout'],
       appStoreLink: 'https://apps.apple.com/tr/app/radcam-creative-photo-filters/id1079944301',
     },
   },
@@ -236,9 +249,9 @@ export const projects: Project[] = [
     link: 'https://apps.apple.com/tr/app/ai-song-generator-mozart/id6502656704',
     details: {
       description:
-        'AI-powered music generation app enabling users to create original songs with vocals and instrumentation. Led the iOS team across this and two other apps at Boby.ai, sustaining 98% crash-free sessions.',
-      techStack: ['Swift', 'SwiftUI', 'Flutter', 'OpenAI API', 'Firebase', 'RevenueCat', 'Fastlane', 'Jenkins'],
-      highlights: ['98% crash-free sessions', '38% crash rate reduction via automated QA', 'A/B tested onboarding flows', 'Cross-platform iOS + Flutter'],
+        'AI-powered music generation app for creating original songs. Led as Lead Mobile Engineer at Boby.ai, managing a cross-functional team of 4 engineers with PR gate standards and weekly architecture reviews.',
+      techStack: ['Swift', 'SwiftUI', 'Flutter', 'OpenAI API', 'Core Data', 'Firebase', 'RevenueCat', 'Jenkins', 'Fastlane'],
+      highlights: ['98% crash-free sessions', '38% crash rate cut via automated QA', 'A/B tested onboarding flows', '4 engineers led, 2 onboarded to iOS'],
       appStoreLink: 'https://apps.apple.com/tr/app/ai-song-generator-mozart/id6502656704',
     },
   },
@@ -251,9 +264,9 @@ export const projects: Project[] = [
     link: 'https://apps.apple.com/tr/app/moseiki-ai-powered-social/id6476424685',
     details: {
       description:
-        'Large-scale AI-powered social media platform with crypto-wallet integration, NFT features, and 360+ dynamic screens. Architected the entire gRPC API layer and AVFoundation media pipelines.',
-      techStack: ['Swift', 'SwiftUI', 'gRPC', 'AVFoundation', 'Core Data', 'XCTest', 'XCUITest', 'VIPER'],
-      highlights: ['360+ dynamic screens', 'Sub-200ms API latency', '85% automated test coverage', '2 mid-level engineers mentored'],
+        'AI-powered social platform with NFT/crypto-wallet features. Architected the gRPC API layer (chosen for bidirectional streaming) and AVFoundation pipelines (AVAssetReader/Writer for memory-bounded processing on lower-end devices).',
+      techStack: ['Swift', 'SwiftUI', 'gRPC', 'AVFoundation', 'Core Data', 'VIPER', 'XCTest', 'XCUITest', 'Combine'],
+      highlights: ['360+ dynamic screens', 'Sub-200ms API latency via gRPC', '85% automated test coverage', '2 mid-level engineers mentored'],
       appStoreLink: 'https://apps.apple.com/tr/app/moseiki-ai-powered-social/id6476424685',
     },
   },
@@ -266,9 +279,9 @@ export const projects: Project[] = [
     link: 'https://apps.apple.com/tr/app/crypto-pro-portfolio-tracker/id980888073',
     details: {
       description:
-        'Professional crypto trading and portfolio tracker serving 10K+ daily active traders. Built real-time trading flows with WebSocket and Combine, plus watchOS background-sync pipelines.',
+        'Professional crypto trading and portfolio tracker for 10K+ daily active traders. Built real-time trading flows with WebSocket and Combine, plus watchOS background-sync pipelines using GCD and BackgroundTasks.',
       techStack: ['Swift', 'UIKit', 'Combine', 'WebSocket', 'GCD', 'BackgroundTasks', 'watchOS', 'Core Data'],
-      highlights: ['10K+ daily active traders', '25% reduction in UI drop-off', '40% improved sync reliability', 'Sub-200ms watchOS latency'],
+      highlights: ['10K+ daily active traders', '25% UI drop-off reduction', '40% improved watchOS sync reliability', 'Sub-200ms latency'],
       appStoreLink: 'https://apps.apple.com/tr/app/crypto-pro-portfolio-tracker/id980888073',
     },
   },
@@ -281,9 +294,9 @@ export const projects: Project[] = [
     link: 'https://apps.apple.com/tr/app/do%C4%9Fruluk-cesaret-oyunlar%C4%B1/id1066160712',
     details: {
       description:
-        'Popular party game app with IAP subscription flows. Optimized the purchase funnel using A/B-tested onboarding variants, lifting paywall conversion by 22%, and built with React Native + Redux.',
+        'Popular party game app with IAP subscription flows. Lifted paywall conversion 22% via A/B-tested onboarding variants and unified iOS + Android revenue reporting with MongoDB-backed funnel analytics.',
       techStack: ['React Native', 'Redux', 'TypeScript', 'StoreKit', 'MongoDB', 'Firebase'],
-      highlights: ['22% paywall conversion lift', 'A/B tested onboarding', 'Unified iOS + Android revenue reporting', 'Modular MVVM components'],
+      highlights: ['22% paywall conversion lift', 'A/B tested onboarding', 'Unified cross-platform revenue reporting', 'MongoDB-backed analytics'],
       appStoreLink: 'https://apps.apple.com/tr/app/do%C4%9Fruluk-cesaret-oyunlar%C4%B1/id1066160712',
     },
   },
@@ -296,9 +309,9 @@ export const projects: Project[] = [
     link: 'https://apps.apple.com/tr/app/aisalah/id6742526415',
     details: {
       description:
-        'Personal project: AI-powered Islamic prayer companion app with intelligent scheduling, personalized reminders, and AI-driven content workflows. Built and published independently.',
-      techStack: ['Swift', 'SwiftUI', 'Core ML', 'Core Location', 'RevenueCat', 'Firebase', 'Push Notifications'],
-      highlights: ['100% independently built & published', 'On-device AI for prayer time calculation', 'Personalized reminder system', 'Available on App Store'],
+        'Personal project: AI-powered Islamic prayer companion with intelligent scheduling, personalized reminders, and AI-driven content workflows. Built and published independently from concept to App Store.',
+      techStack: ['Swift', 'SwiftUI', 'Core ML', 'Core Location', 'RevenueCat', 'Firebase', 'APNs'],
+      highlights: ['100% independently built & published', 'On-device AI for intelligent scheduling', 'Personalized push notification system', 'Live on App Store'],
       appStoreLink: 'https://apps.apple.com/tr/app/aisalah/id6742526415',
     },
   },
@@ -311,9 +324,9 @@ export const projects: Project[] = [
     link: 'https://apps.apple.com/tr/app/balloon-dns-advisor/id6744152619',
     details: {
       description:
-        'Personal project: Privacy-focused DNS changer app enabling secure DNS routing, performance comparison across providers, and user-controlled network configuration. Built and published independently.',
+        'Personal project: Privacy-focused DNS changer enabling secure routing, real-time performance comparison across providers, and user-controlled network configuration. Built and published independently.',
       techStack: ['Swift', 'SwiftUI', 'NetworkExtension', 'Network.framework', 'Core Data', 'StoreKit 2'],
-      highlights: ['100% independently built & published', 'Custom DNS routing engine', 'Real-time performance comparison', 'Privacy-first architecture'],
+      highlights: ['100% independently built & published', 'Custom DNS routing engine', 'Real-time performance comparison', 'Privacy-first, no analytics'],
       appStoreLink: 'https://apps.apple.com/tr/app/balloon-dns-advisor/id6744152619',
     },
   },

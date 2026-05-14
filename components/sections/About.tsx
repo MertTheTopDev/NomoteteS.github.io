@@ -36,6 +36,14 @@ const colorMap: Record<string, { badge: string; dot: string }> = {
     badge: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/20',
     dot: 'bg-cyan-500',
   },
+  violet: {
+    badge: 'text-violet-400 bg-violet-500/10 border-violet-500/20',
+    dot: 'bg-violet-500',
+  },
+  sky: {
+    badge: 'text-sky-400 bg-sky-500/10 border-sky-500/20',
+    dot: 'bg-sky-500',
+  },
 };
 
 const container = {
