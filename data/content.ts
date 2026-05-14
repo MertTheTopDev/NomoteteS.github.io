@@ -7,6 +7,7 @@ export const personalInfo = {
   location: 'Istanbul, Turkey',
   appsPublished: 52,
   avatar: '/assets/images/my-avatar.png',
+  cvUrl: '/MertTureduCV.pdf',
   social: {
     linkedin: 'https://linkedin.com/in/mertthedev',
     github: 'https://github.com/MertTheTopDev',
@@ -31,26 +32,55 @@ export const services = [
   {
     icon: 'smartphone',
     title: 'iOS Development',
-    description:
-      'End-to-end App Store products with Swift, SwiftUI, and UIKit — from architecture to release.',
+    description: 'End-to-end App Store products with Swift, SwiftUI, and UIKit — from architecture to release.',
   },
   {
     icon: 'cpu',
     title: 'On-Device AI',
-    description:
-      'Core ML, Vision Framework, and OpenAI API integrations for intelligent, real-time mobile features.',
+    description: 'Core ML, Vision Framework, and OpenAI API integrations for intelligent, real-time mobile features.',
   },
   {
     icon: 'layers',
     title: 'Cross-Platform',
-    description:
-      'Flutter and React Native solutions for teams that need iOS and Android from a single codebase.',
+    description: 'Flutter and React Native solutions for teams that need iOS and Android from a single codebase.',
   },
   {
     icon: 'trending-up',
     title: 'Monetization & Growth',
-    description:
-      'RevenueCat, StoreKit 2, A/B testing, and analytics pipelines to scale app revenue.',
+    description: 'RevenueCat, StoreKit 2, A/B testing, and analytics pipelines to scale app revenue.',
+  },
+];
+
+export const techStack = [
+  {
+    category: 'Languages',
+    color: 'blue',
+    items: ['Swift', 'Objective-C', 'TypeScript', 'JavaScript', 'Python', 'Dart'],
+  },
+  {
+    category: 'iOS Frameworks',
+    color: 'purple',
+    items: ['SwiftUI', 'UIKit', 'AVFoundation', 'Core ML', 'ARKit', 'Metal', 'Vision', 'Core Data', 'StoreKit 2', 'Combine', 'WidgetKit'],
+  },
+  {
+    category: 'Cross-Platform',
+    color: 'emerald',
+    items: ['Flutter', 'React Native', 'React', 'Redux'],
+  },
+  {
+    category: 'Tools & CI/CD',
+    color: 'amber',
+    items: ['Xcode', 'Fastlane', 'GitHub Actions', 'Jenkins', 'Instruments', 'SPM', 'TestFlight'],
+  },
+  {
+    category: 'SDKs & Services',
+    color: 'rose',
+    items: ['RevenueCat', 'Firebase', 'AppsFlyer', 'Mixpanel', 'OneSignal', 'Crashlytics', 'Stripe'],
+  },
+  {
+    category: 'Architecture',
+    color: 'cyan',
+    items: ['MVVM', 'VIPER', 'Clean Architecture', 'async/await', 'TDD', 'SOLID', 'gRPC'],
   },
 ];
 
@@ -65,8 +95,7 @@ export const education = [
     school: 'Sevkiye Özel Fen Lisesi',
     degree: 'Science High School',
     period: '2014 — 2018',
-    detail:
-      'Science-focused curriculum, strengthening analytical thinking and problem-solving fundamentals.',
+    detail: 'Science-focused curriculum, strengthening analytical thinking and problem-solving fundamentals.',
   },
 ];
 
@@ -150,7 +179,24 @@ export const certifications = [
   { name: 'edX Harvard CS50x — Introduction to Computer Science', year: '2020' },
 ];
 
-export const projects = [
+export interface ProjectDetail {
+  description: string;
+  techStack: string[];
+  highlights: string[];
+  appStoreLink: string;
+}
+
+export interface Project {
+  id: number;
+  title: string;
+  category: string;
+  tags: string[];
+  image: string;
+  link: string;
+  details: ProjectDetail;
+}
+
+export const projects: Project[] = [
   {
     id: 1,
     title: 'XScanner',
@@ -158,6 +204,13 @@ export const projects = [
     tags: ['ios-apps'],
     image: '/assets/images/projects/project-1.jpg',
     link: 'https://apps.apple.com/tr/app/xscanner-pdf-dosya-taray%C4%B1c%C4%B1/id1553261625',
+    details: {
+      description:
+        'Professional PDF scanner and document management app with real-time OCR, intelligent edge detection, and cloud sync. One of 6 production apps shipped at IzySoft with a focus on performance and stability.',
+      techStack: ['Swift', 'SwiftUI', 'Vision Framework', 'Core Data', 'Metal', 'RevenueCat', 'Firebase'],
+      highlights: ['99.5%+ crash-free sessions', 'Real-time edge detection via Vision', 'RevenueCat subscription stack', '30% faster CI/CD pipeline'],
+      appStoreLink: 'https://apps.apple.com/tr/app/xscanner-pdf-dosya-taray%C4%B1c%C4%B1/id1553261625',
+    },
   },
   {
     id: 2,
@@ -166,6 +219,13 @@ export const projects = [
     tags: ['ios-apps'],
     image: '/assets/images/projects/project-2.jpg',
     link: 'https://apps.apple.com/tr/app/radcam-creative-photo-filters/id1079944301',
+    details: {
+      description:
+        'Real-time creative camera app with advanced photo filters for 2M+ users. Refactored its camera pipeline in Core Image and Metal, and migrated legacy UIKit modules to modern SwiftUI.',
+      techStack: ['Swift', 'SwiftUI', 'UIKit', 'Core Image', 'Metal', 'AVFoundation', 'Fastlane'],
+      highlights: ['2M+ active users', '30% reduction in render-pipeline crashes', 'Legacy UIKit → SwiftUI migration', 'Unified SDK via SPM'],
+      appStoreLink: 'https://apps.apple.com/tr/app/radcam-creative-photo-filters/id1079944301',
+    },
   },
   {
     id: 3,
@@ -174,6 +234,13 @@ export const projects = [
     tags: ['ios-apps', 'android-apps'],
     image: '/assets/images/projects/project-3.jpg',
     link: 'https://apps.apple.com/tr/app/ai-song-generator-mozart/id6502656704',
+    details: {
+      description:
+        'AI-powered music generation app enabling users to create original songs with vocals and instrumentation. Led the iOS team across this and two other apps at Boby.ai, sustaining 98% crash-free sessions.',
+      techStack: ['Swift', 'SwiftUI', 'Flutter', 'OpenAI API', 'Firebase', 'RevenueCat', 'Fastlane', 'Jenkins'],
+      highlights: ['98% crash-free sessions', '38% crash rate reduction via automated QA', 'A/B tested onboarding flows', 'Cross-platform iOS + Flutter'],
+      appStoreLink: 'https://apps.apple.com/tr/app/ai-song-generator-mozart/id6502656704',
+    },
   },
   {
     id: 4,
@@ -182,6 +249,13 @@ export const projects = [
     tags: ['ios-apps', 'android-apps'],
     image: '/assets/images/projects/project-4.jpg',
     link: 'https://apps.apple.com/tr/app/moseiki-ai-powered-social/id6476424685',
+    details: {
+      description:
+        'Large-scale AI-powered social media platform with crypto-wallet integration, NFT features, and 360+ dynamic screens. Architected the entire gRPC API layer and AVFoundation media pipelines.',
+      techStack: ['Swift', 'SwiftUI', 'gRPC', 'AVFoundation', 'Core Data', 'XCTest', 'XCUITest', 'VIPER'],
+      highlights: ['360+ dynamic screens', 'Sub-200ms API latency', '85% automated test coverage', '2 mid-level engineers mentored'],
+      appStoreLink: 'https://apps.apple.com/tr/app/moseiki-ai-powered-social/id6476424685',
+    },
   },
   {
     id: 5,
@@ -190,6 +264,13 @@ export const projects = [
     tags: ['ios-apps'],
     image: '/assets/images/projects/project-5.jpg',
     link: 'https://apps.apple.com/tr/app/crypto-pro-portfolio-tracker/id980888073',
+    details: {
+      description:
+        'Professional crypto trading and portfolio tracker serving 10K+ daily active traders. Built real-time trading flows with WebSocket and Combine, plus watchOS background-sync pipelines.',
+      techStack: ['Swift', 'UIKit', 'Combine', 'WebSocket', 'GCD', 'BackgroundTasks', 'watchOS', 'Core Data'],
+      highlights: ['10K+ daily active traders', '25% reduction in UI drop-off', '40% improved sync reliability', 'Sub-200ms watchOS latency'],
+      appStoreLink: 'https://apps.apple.com/tr/app/crypto-pro-portfolio-tracker/id980888073',
+    },
   },
   {
     id: 6,
@@ -198,6 +279,13 @@ export const projects = [
     tags: ['ios-apps'],
     image: '/assets/images/projects/project-6.jpg',
     link: 'https://apps.apple.com/tr/app/do%C4%9Fruluk-cesaret-oyunlar%C4%B1/id1066160712',
+    details: {
+      description:
+        'Popular party game app with IAP subscription flows. Optimized the purchase funnel using A/B-tested onboarding variants, lifting paywall conversion by 22%, and built with React Native + Redux.',
+      techStack: ['React Native', 'Redux', 'TypeScript', 'StoreKit', 'MongoDB', 'Firebase'],
+      highlights: ['22% paywall conversion lift', 'A/B tested onboarding', 'Unified iOS + Android revenue reporting', 'Modular MVVM components'],
+      appStoreLink: 'https://apps.apple.com/tr/app/do%C4%9Fruluk-cesaret-oyunlar%C4%B1/id1066160712',
+    },
   },
   {
     id: 7,
@@ -206,6 +294,13 @@ export const projects = [
     tags: ['ios-apps', 'my-apps'],
     image: '/assets/images/projects/project-7.jpg',
     link: 'https://apps.apple.com/tr/app/aisalah/id6742526415',
+    details: {
+      description:
+        'Personal project: AI-powered Islamic prayer companion app with intelligent scheduling, personalized reminders, and AI-driven content workflows. Built and published independently.',
+      techStack: ['Swift', 'SwiftUI', 'Core ML', 'Core Location', 'RevenueCat', 'Firebase', 'Push Notifications'],
+      highlights: ['100% independently built & published', 'On-device AI for prayer time calculation', 'Personalized reminder system', 'Available on App Store'],
+      appStoreLink: 'https://apps.apple.com/tr/app/aisalah/id6742526415',
+    },
   },
   {
     id: 8,
@@ -214,6 +309,13 @@ export const projects = [
     tags: ['ios-apps', 'my-apps'],
     image: '/assets/images/projects/project-8.jpg',
     link: 'https://apps.apple.com/tr/app/balloon-dns-advisor/id6744152619',
+    details: {
+      description:
+        'Personal project: Privacy-focused DNS changer app enabling secure DNS routing, performance comparison across providers, and user-controlled network configuration. Built and published independently.',
+      techStack: ['Swift', 'SwiftUI', 'NetworkExtension', 'Network.framework', 'Core Data', 'StoreKit 2'],
+      highlights: ['100% independently built & published', 'Custom DNS routing engine', 'Real-time performance comparison', 'Privacy-first architecture'],
+      appStoreLink: 'https://apps.apple.com/tr/app/balloon-dns-advisor/id6744152619',
+    },
   },
 ];
 
@@ -223,8 +325,7 @@ export const blogPosts = [
     title: 'The Future of Swift in 2025: Trends, Technologies, and Relevance in the Industry',
     category: 'Swift',
     date: 'Oct 23, 2024',
-    excerpt:
-      'Swift is a powerful, open-source programming language developed by Apple, primarily used for building apps on iOS, macOS, watchOS, and tvOS.',
+    excerpt: 'Swift is a powerful, open-source programming language developed by Apple, primarily used for building apps on iOS, macOS, watchOS, and tvOS.',
     image: '/assets/images/blog-2.jpg',
     link: 'https://medium.com/@mertthedev/the-future-of-swift-in-2025-trends-technologies-and-relevance-in-the-industry-9e22b0709c61',
   },
@@ -233,8 +334,7 @@ export const blogPosts = [
     title: 'Protocols, Enums, Classes, Actors, Structs, Extensions, and Generics in Swift',
     category: 'Swift',
     date: 'Oct 23, 2024',
-    excerpt:
-      'Swift is a powerful and versatile programming language that offers various features for building robust applications.',
+    excerpt: 'Swift is a powerful and versatile programming language that offers various features for building robust applications.',
     image: '/assets/images/blog-1.jpg',
     link: 'https://medium.com/@mertthedev/protocols-enums-classes-actors-structs-extensions-and-generics-in-swift-mastering-the-1ae00bbee46c',
   },
@@ -243,8 +343,7 @@ export const blogPosts = [
     title: 'Mastering Swift Function Attributes: nonisolated, mutating, and Beyond',
     category: 'Swift',
     date: 'Oct 23, 2024',
-    excerpt:
-      'In Swift, function attributes are key to controlling how functions handle state, concurrency, and errors.',
+    excerpt: 'In Swift, function attributes are key to controlling how functions handle state, concurrency, and errors.',
     image: '/assets/images/blog-3.jpg',
     link: 'https://azmanmerto.medium.com/mastering-swift-function-attributes-nonisolated-mutating-and-beyond-5ac80a061c47',
   },
@@ -253,8 +352,7 @@ export const blogPosts = [
     title: 'iOS Developer Teknik Mülakat Soruları (24 adet)',
     category: 'Insights',
     date: 'Dec 25, 2023',
-    excerpt:
-      "UIKit'te kullanılan UIView ve UIViewController arasındaki temel farklar ve bu iki sınıf arasındaki ilişki.",
+    excerpt: "UIKit'te kullanılan UIView ve UIViewController arasındaki temel farklar ve bu iki sınıf arasındaki ilişki.",
     image: '/assets/images/blog-4.jpg',
     link: 'https://medium.com/@mertthedev/ios-developer-teknik-m%C3%BClakat-sorular%C4%B1-24-adet-820e1ce0fcf5',
   },
@@ -263,8 +361,7 @@ export const blogPosts = [
     title: 'Learning Swift in 2024: Should You Do It?',
     category: 'Swift',
     date: 'Oct 17, 2023',
-    excerpt:
-      'Swift is a programming language designed by Apple for developing applications for iOS, macOS, watchOS, and tvOS.',
+    excerpt: 'Swift is a programming language designed by Apple for developing applications for iOS, macOS, watchOS, and tvOS.',
     image: '/assets/images/blog-5.jpg',
     link: 'https://medium.com/@mertthedev/learning-swift-in-2024-should-you-do-it-e4dd5308d56d',
   },
@@ -273,8 +370,7 @@ export const blogPosts = [
     title: 'Bu Misafir Girişi NEDİR?',
     category: 'Questions',
     date: 'Oct 13, 2023',
-    excerpt:
-      'Misafir girişi, kullanıcılara bir uygulamayı veya web sitesini, herhangi bir hesap oluşturma yapmadan geçici olarak erişim sağlama özelliğidir.',
+    excerpt: 'Misafir girişi, kullanıcılara bir uygulamayı veya web sitesini, herhangi bir hesap oluşturma yapmadan geçici olarak erişim sağlama özelliğidir.',
     image: '/assets/images/blog-6.jpg',
     link: 'https://medium.com/@mertthedev',
   },
