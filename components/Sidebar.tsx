@@ -19,7 +19,7 @@ import { personalInfo } from '@/data/content';
 import TypeWriter from '@/components/ui/TypeWriter';
 
 const roles = [
-  'Senior iOS Developer',
+  'Senior iOS Engineer',
   'Mobile & AI Engineer',
   'App Store Publisher',
   'Swift Enthusiast',
