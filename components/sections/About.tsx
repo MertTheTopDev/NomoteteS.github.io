@@ -44,6 +44,14 @@ const colorMap: Record<string, { badge: string; dot: string }> = {
     badge: 'text-sky-400 bg-sky-500/10 border-sky-500/20',
     dot: 'bg-sky-500',
   },
+  indigo: {
+    badge: 'text-indigo-400 bg-indigo-500/10 border-indigo-500/20',
+    dot: 'bg-indigo-500',
+  },
+  teal: {
+    badge: 'text-teal-400 bg-teal-500/10 border-teal-500/20',
+    dot: 'bg-teal-500',
+  },
 };
 
 const container = {
