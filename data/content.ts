@@ -55,16 +55,20 @@ export const techStack = [
   {
     category: 'Languages',
     color: 'blue',
-    items: ['Swift', 'Objective-C', 'TypeScript', 'JavaScript (ES6+)', 'Python', 'Dart'],
+    items: ['Swift', 'SwiftUI', 'UIKit', 'Objective-C', 'TypeScript', 'JavaScript (ES6+)', 'Python'],
   },
   {
-    category: 'iOS Frameworks',
+    category: 'Apple Frameworks',
     color: 'purple',
     items: [
-      'SwiftUI', 'UIKit', 'AVFoundation', 'Core ML', 'ARKit', 'Metal', 'Vision',
-      'Core Data', 'SwiftData', 'StoreKit 2', 'SceneKit', 'WidgetKit',
-      'App Intents', 'Live Activities', 'APNs', 'Accessibility',
+      'AVFoundation', 'ARKit', 'Metal', 'Vision', 'Core Data', 'SwiftData',
+      'StoreKit 2', 'SceneKit', 'WidgetKit', 'App Intents', 'Live Activities', 'APNs', 'Accessibility',
     ],
+  },
+  {
+    category: 'On-Device AI',
+    color: 'indigo',
+    items: ['Core ML', 'Vision Framework', 'Create ML', 'Model Quantization', 'On-Device Inference', 'OpenAI API'],
   },
   {
     category: 'Concurrency & Reactive',
@@ -72,14 +76,19 @@ export const techStack = [
     items: ['async/await', 'Actors', 'Combine', 'RxSwift', 'GCD', 'OperationQueue'],
   },
   {
-    category: 'Cross-Platform',
-    color: 'emerald',
-    items: ['Flutter', 'React Native', 'React', 'Redux'],
+    category: 'Architecture',
+    color: 'sky',
+    items: ['MVVM', 'VIPER', 'Clean Architecture', 'Protocol-Oriented', 'Dependency Injection', 'SOLID'],
   },
   {
-    category: 'Tools & CI/CD',
+    category: 'Networking & Data',
+    color: 'teal',
+    items: ['REST', 'WebSocket', 'gRPC', 'URLSession', 'SQLite', 'MySQL', 'MongoDB', 'Firebase Realtime DB'],
+  },
+  {
+    category: 'CI/CD & Testing',
     color: 'amber',
-    items: ['Xcode', 'Fastlane', 'GitHub Actions', 'Jenkins', 'Instruments', 'SPM', 'CocoaPods', 'SwiftLint', 'TestFlight', 'TDD'],
+    items: ['GitHub Actions', 'Fastlane', 'Jenkins', 'XCTest', 'XCUITest', 'Snapshot Testing', 'SwiftLint', 'SPM', 'CocoaPods', 'TestFlight', 'Instruments', 'TDD'],
   },
   {
     category: 'Security',
@@ -87,14 +96,14 @@ export const techStack = [
     items: ['OAuth 2.0 / OIDC', 'JWT', 'TLS', 'Certificate Pinning', 'Keychain', 'App Transport Security'],
   },
   {
-    category: 'SDKs & Services',
-    color: 'violet',
-    items: ['RevenueCat', 'Adapty', 'Firebase', 'AppsFlyer', 'Mixpanel', 'OneSignal', 'Crashlytics', 'Stripe', 'Google Mobile Ads', 'ATT'],
+    category: 'Cross-Platform',
+    color: 'emerald',
+    items: ['React Native', 'Redux', 'Flutter'],
   },
   {
-    category: 'Architecture',
-    color: 'sky',
-    items: ['MVVM', 'VIPER', 'Clean Architecture', 'Protocol-Oriented', 'Dependency Injection', 'SOLID', 'gRPC', 'REST', 'WebSocket'],
+    category: '3rd-Party SDKs',
+    color: 'violet',
+    items: ['RevenueCat', 'Adapty', 'Stripe', 'AppsFlyer', 'Firebase Analytics & Crashlytics', 'Mixpanel', 'OneSignal', 'Google Mobile Ads', 'ATT'],
   },
 ];
 
@@ -111,12 +120,6 @@ export const education = [
     degree: 'B.Sc. Computer Engineering',
     period: '2014 — 2018',
     detail: 'Nicosia, Cyprus · GPA: 3.66 / 4.00 · Full English curriculum · C1 Proficiency',
-  },
-  {
-    school: 'Sevkiye Özel Fen Lisesi',
-    degree: 'Science High School',
-    period: '2014 — 2018',
-    detail: 'Science-focused curriculum, strengthening analytical thinking and problem-solving fundamentals.',
   },
 ];
 
